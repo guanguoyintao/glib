@@ -1,0 +1,12 @@
+mysql:
+  # =================  tenant : default  ==================
+  - name: ucommon
+    dsn: "tcp(172.24.200.90:3306)/uai_common?charset=utf8mb4&parseTime=True&loc=Local"
+    user: "root-pd"
+    password: "dWcErvYVXAxnbhYu"
+    pool:
+      maxLifetime: "4h"    # 连接可复用的最大时间
+      maxIdleConnect: 500  # 最大空闲连接数
+      maxOpenConnect: 500  # 最大打开连接数
+    loggerConfig:
+      LogLevel: "info"

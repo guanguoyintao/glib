@@ -1,0 +1,15 @@
+redis:
+  - name: "ai-ucounter-cache"
+    addr: "10.141.0.78:6379"
+    password: ""
+    db: 10
+    poolSize: 10
+    minIdleConns: 5
+    type: "masterslave"
+  - name: "ai-udconfig-cache"
+    addr: "10.141.0.78:6379"
+    password: ""
+    db: 11
+    poolSize: 10
+    minIdleConns: 5
+    type: "masterslave"

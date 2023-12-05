@@ -1,0 +1,8 @@
+redis:
+  - name: "ai-udconfig-cache"
+    addr: "10.141.0.78:6379"
+    password: ""
+    db: 2
+    poolSize: 10
+    minIdleConns: 5
+    type: "masterslave"

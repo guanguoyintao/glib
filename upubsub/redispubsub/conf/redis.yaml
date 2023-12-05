@@ -1,0 +1,8 @@
+redis:
+  - name: "ai-mq"
+    addr: "10.141.0.78:6379"
+    password: ""
+    db: 0
+    poolSize: 10
+    minIdleConns: 5
+    type: "masterslave"
